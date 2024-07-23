@@ -1,0 +1,26 @@
+@charset "UTF8";
+
+body {
+    background-color: rgba(229, 184, 255, 0.637);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1 { 
+    color: darkmagenta;
+    background-color: rgb(231, 137, 255);
+    font-size: 24px;
+}
+
+h2 {
+    color: rgb(0, 110, 255);
+    background-color: rgb(247, 247, 204);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px large;
+}

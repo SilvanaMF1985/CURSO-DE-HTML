@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blue
+            ;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            background-color: rgba(137, 43, 226, 0.171);
+        }
+        .especial::before {
+            content: '♛' ;
+        }
+
+        .especial::after {
+            content: '♛' ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <li><a href="https://github.com/SilvanaMF1985?tab=repositories" class="especial">Meu repositório do gitthub</a></li>
+    <li><a href="https://youtu.be/WPtRX4n0UJs?si=Ht3fwgUS7CmJCMIQ" target="_blank" rel="external">Pseudo-classes em CSS - @Curso em Vídeo HTML5 e CSS3</a></li>
+    <li><a href="https://youtu.be/vMlrcOVr7po?si=4WPf4QhDGTgWqSTO" target="_blank" rel="external">Pseudo-elementos em CSS - @Curso em Vídeo HTML5 e CSS3</a></li>
+
+    <p><a href="seletores.html">Voltar para a página inicial</a></p>
+</body>
+</html>

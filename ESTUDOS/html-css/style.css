@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #A83478;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}*/
+
+div#mod1 {
+    background-color: aliceblue;
+    height: 300px;
+    width: 200px;
+}
+
+div#mod2 {
+    background-color: aquamarine;
+    padding: auto;
+    height: 300px;
+    width: 200px;
+    border: 10px;
+}

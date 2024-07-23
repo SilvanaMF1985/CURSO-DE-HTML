@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Introdução</h1>
+    <p>Um id vai identificar um elemento único dentro da página atual.
+        Essa identificação vai nos permitir criar um estilo especial para um
+        elemento isolado. Já um class vai identificar uma classe à qual
+        um ou mais elementos pertençam, compartilhando características
+        em comum a todos os que façam parte desse grupo.</p>
+        <p>SE LIGA NA REGRA: Em um mesmo documento HTML, só podemos
+            usar um id para um único elemento, o que significa que não podemos
+            ter dois elementos com um mesmo id dentro de uma mesma página.
+            Porém, podemos atribuir um mesmo class para vários elementos que
+            possuam essa mesma característica.</p>
+
+    <h1>Usando o id com CSS</h1>
+    <p>O "id" funciona como uma identificação única, onde eu configuro determinados elementos, isso serve para quando quero ter uma parte com designe diferente das outras. id significa identificação e eu sou um nome a ele para identifica-lo depois lá no css usando a #.</p>
+    <p>Ex.: h1#nomequeeudei ou #nomequeeudei </p>
+    <p><strong>Nota:</strong> Tudo que em html é id em css é #</p>
+    <p>Tudo que em html é class em css é '.'</p>
+    <p><strong>A regra do W3C é se eu já usei o id principal dentro de um elemento eu não posso usa-lo novamente dentro do mesmo documento html. Ele funciona mas é errado usar duas vezes.</strong></p>
+    <p><a href="https://youtu.be/TZuVpJmSNSE?si=0ugkOgct1odSBDfs" target="_blank" rel="external">Vídeo sobre id</a></p>
+
+    <h1>Usando o class com CSS</h1>
+    <p>Serve para usar em mais de um elemento dentro do documento html. O bom seria não denominar o nome da class de acordo com a forma e sim de acordo com a função, para ficar mais fácil de identifica-lo.</p>
+
+    <h1>As diferenças entre id e class</h1>
+    <p>
+        A diferença é que o id só pode ser usado 1 vez dentro do documento html e o class pode ser usado em vários elementos. E o id sobrepõe as configurações de classes
+    </p>
+    <p><strong>Em um mesmo elemento eu consigo ter uma class e um id, coloco o nome dos dois dentro das aspas duplas sem separar por vígulas.</strong></p>
+
+    <h1>Pseudo-classes em CSS</h1>
+    <p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor após um sinal de dois pontos e especificam um estado especial de um elemento. Elas tem que estar relacionadas a um elemento ou uma classe. Existem várias pseudo-classes para estilos, podemos citar :hover, :visited, :active, :checked, :empty e :focus.</p>
+    
+    <p>Aqui é onde eu crio a div, cada divi ocupa o espaço de ponta a ponta do documento, podemos definir a altura da div atraves do <mark>height</mark> e a largura através do <mark>width</mark>, Será abordado mais sobre div no próximo capitulo</p>
+
+    <p><a href="exemplodehover.html">Clique aqui para ver os exemplos</a></p>
+    <p><a href="personalizandolinks.html">Clique aqui para ver os exemplos de personalizar os links</a></p>
+
+    <div id="testdiv1">01 </div>
+
+    <div id="testdiv2">02</div>
+
+    <div id="testdiv3">03</div>
+
+    <div id="testdiv4">04</div>
+        <p>Podemos ver o exemplo acessando os documentos em meu repositório aqui neste link.</p>
+    <h1>Pseudo-elementos em CSS</h1>
+    <p>Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um seletor após dois sinais de dois pontos e permitem que você formate um pedaço específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS são ::before, ::after, ::first-letter, ::first-line.</p>
+
+    <h2>Propriedades herdadas</h2>
+    <p>são três técnicas podem ser usadas em conjunto, e os estilos de cada serão combinados nessa ordem: 1º lugar: CSS externo
+        2º lugar: CSS interno/local
+        3º lugar: CSS inline
+    </p>
+    <p>Sendo assim, caso haja duplicidade nas configurações, o que fica valendo no final é a propriedade especificada nas configurações inline. Cada camada de aplicação de estilos vai adicionando propriedades novas e sobrescrevendo as configurações do nível anterior.</p>
+    <p>Quando nós aplicamos configurações personalizadas de id ou de class, também vai existir uma combinação de configurações, como você já deve ter percebido ao analisar o exemplo que apresentamos nas páginas anteriores. <strong>O id sobrepões as outras configurações.</strong></p>
+
+    <p><strong>Resumo:</strong></p>
+    <ul>
+        <li>#  = id</li>
+        <li>.  = class</li>
+        <li>:  = pseudo-class</li>
+        <li>::  = pseudo-elemento</li>
+        <li>>  = children</li>
+    </ul>
+
+    <h4>Os videos referentes a este capitulo são 19, 20, 21, 22,</h4>
+    <h5>Assista os videos abaixo</h5>
+    <p>colocar videos incorporados</p>
+    <p><iframe width="300" height="200" src="https://www.youtube.com/embed/TZuVpJmSNSE?si=C-cjjseCEQbeJet9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/zXfTjPrMC_0?si=mJlyjKY8T2tvZEEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/WPtRX4n0UJs?si=X_Nbk2WDrITRW_2D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/vMlrcOVr7po?si=IBUp1DwTQ9UE92df" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+</body>
+</html>

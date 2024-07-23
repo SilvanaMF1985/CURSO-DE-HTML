@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 240, 240);
+            margin: 0px;
+        }
+
+        header {
+            width: 600px;
+            background-color: #cccccc;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        nav {
+            background-color: lightslategray;
+            padding: 3px;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.377);
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            
+        }
+
+        article > aside {
+            background-color: rgb(191, 196, 191);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Você sabe como funcionam as grouping tags? Sabe para que servem as tags section, article, nav, aside, footer, header, etc? Sabe aplicar o estilo às tags de agrupamento para construir um exemplo de estrutura de site? Pois acompanhe este vídeo até o final para responder a estas e muitas outras perguntas.</p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JPMm-jyKOaM?si=C_HdcQIKFtwMkwLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </section>
+        <section id="notícias">
+            <article>
+                
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam modi nobis nam. Odit, eos illo. Architecto ullam sit ab asperiores rerum placeat vel obcaecati illum libero. Ex eum quidem vitae!</p>
+                <aside>
+                    <p>Artigo escrito por josé da Silva</p>
+                </aside>
+                    
+
+            </article>
+            <article>
+                <h2>Resumo sobre sombras</h2>
+                <p>1- vamos colocar uma sombra na seção nav que significa navegação e é onde fica os links</p>
+                <p>Então no style do nav vou usar uma sombra de caixa que é representada pelo box-shadow </p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desevolvido pelo Curso em Video</p>
+        <p><a href="modelosdecaixa.html">Voltar para a página principal</a></p>
+
+    </footer>
+    
+</body>
+</html>

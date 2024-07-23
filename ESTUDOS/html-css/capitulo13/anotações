@@ -1,0 +1,17 @@
+Cores
+Representações por nomes:
+- blue
+- white
+- black
+
+Representações por códigos hexadecimais:
+decimal -> 0 1 2 3 4 5 6 7 8 9 
+Hexadecimal -> 0 1 2 3 4 5 6 7 8 9 A B C D E F 
+(000000) (0000ff) (fffff)
+
+Representações em RGB:
+ (0,0, 255) (255, 255, 255)
+
+ Representações por HSL (Hue,  Sturation, luminosity)
+ hsl(240, 100%, 50%)
+

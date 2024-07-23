@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de caixas box-level</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+        h1 {
+            background-color: lightgreen;
+            height: 250px;
+            width: 250px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: green;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+
+            outline-width: 2px;
+            outline-style: dashed;
+            outline-color: coral;
+        }
+        
+        .testando {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+
+        a {
+            border: 1px dashed blueviolet;
+
+            padding: 10px;
+
+            margin: 10px 30px 30px 30px;
+
+            
+
+        }
+        p {
+            margin: 10px 2px 30px 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelos de caixas</h1>
+    <p><a href="">Aula 1</a></p>
+    <p><a href="">Aula 2</a></p>
+    <p><a href="">Aula 3</a></p>
+    <p><a href="groupingtags.html">Aula 4 – Grouping Tags em HTML5</a></p>
+    <p><a href="https://youtu.be/JACiDRNWjjQ?si=g7QGdffBzsP6Zhcp">Aula 5 – Sombra nas Caixas</a></p>
+    <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guia do Flexbox</a></p>
+    <p><a href="https://youtu.be/n0rjAs_Im4w?si=4OxTmZnJJsagWyYd">Aula 7 – Bordas decoradas</a></p>
+    
+            <h1>Modelos de caixas, display block</h1>
+            
+        <p> margim auto faz com que ele centralize no meio, se for uma caixa, se for um texto é so colocar um text align center que funciona.</p>
+        podemos resumir o padding e margin na seguite sequencia, como ja haviamos dito em uma aula anterior.
+        veja: shorthands, na seuquência qua esta no style e usa a primeira palavra como border, padding, margin.
+        Se os 4 valores forem iguais, basta informar uma vez só. Se informar duas medidas apenas fica a primeira indicara top e botton e a segunda indicará right e left. 
+        <p></p>
+        <h1 class="testando">Exemplo número 2, display inline block</h1>
+        <h1 class="testando">Exemplo numero 3, nada para escrever</h1>
+        <h1 class="testando">Exemplo numero 4, nada para escrever</h1>
+        <h1 class="testando">Exemplo numero 5, nada para escrever</h1>
+       
+    
+    <p>Paragráfos também são exemplos de box-level, mas os <a href="#">links são exeemplos de caixas inline-level</a>. Vamos ver como funciona.</p>
+
+    
+    
+    
+</body>
+</html>

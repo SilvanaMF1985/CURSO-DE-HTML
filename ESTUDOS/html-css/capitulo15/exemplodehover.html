@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* display none é para não mostrar o que tem dentro do paragrafo. Isto é, os paragrafos que estão dentro de div eu não vou querer mexer */
+        div > p {
+            display: none;
+        }
+
+        /* Neste exemplo abaixo é para mostrar o paragrafo que estaa dentro de div, apenas quado eu passar o mouse*/
+
+        div:hover > p {
+            display: block;
+            color: brown;
+            background-color: violet;
+            width: 200px;
+        }
+
+        div:hover {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse aqui</p>
+
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+
+    <p>Fim do exemplo</p>
+    <p><a href="seletores.html">Voltar para a página inicial</a></p>
+</body>
+</html>
