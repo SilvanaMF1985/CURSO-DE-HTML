@@ -10,14 +10,32 @@
         }
 
         table {
-            width: 500px;
+            width: 450px;
             border-collapse: collapse;
+            position: relative;
             
+        }
+
+        caption {
+            background-color: rgb(97, 170, 121);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
         }
 
         thead {
             background-color: rgb(114, 112, 112);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(114, 112, 112);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
         }
 
         td, th {
@@ -38,32 +56,14 @@
 </head>
 <body>
     <h1>Capítulo 21 Aula 04 – Aprendendo a trabalhar com tabelas grandes</h1>
-    <h2>Anatomia de tabelas grandes</h2>
-    <p>TABLE</p>
-    <ul><li>THEAD</li>
-        <ul>
-            <li>TR, TD, TH</li>
-        </ul>
-    </ul>
-    <ul>
-        <li>TBODY</li>
-        <ul>
-            <li>TR, TD, TH</li>
-        </ul>
-    </ul>
-    <ul>
-        <li>TFOOT</li>
-        <ul>
-            <li>TR, TD, TH</li>
-        </ul>
-    </ul>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
                 <tr>
-                    <th>Unidade federativa</th>
-                    <th>População</th>
-                    <th>% da população total</th>
+                    <th scope="col">Unidade federativa</th>
+                    <th scope="col" style="width: 80px;">População</th>
+                    <th scope="col" style="width: 60px;">% do total</th>
                 </tr>
         </thead>
 
@@ -228,7 +228,7 @@
 
         <tfoot>
             <tr>
-                <td>total</td>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>203 062 512</strong></td>
                 <td class="numero">99,9</td>
             </tr>
@@ -236,5 +236,34 @@
         </tfoot>
 
     </table>
+
+    <h2>Anatomia de tabelas grandes</h2>
+    <p>Caption: é a legenda da tabela</p>
+    <p>TABLE</p>
+    <ul><li>THEAD</li>
+        <ul>
+            <li>TR, TD, TH</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>TBODY</li>
+        <ul>
+            <li>TR, TD, TH</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>TFOOT</li>
+        <ul>
+            <li>TR, TD, TH</li>
+        </ul>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur iure eius repellat, recusandae autem molestias, mollitia debitis neque vel velit excepturi blanditiis suscipit aliquam iste sapiente voluptas esse quisquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui exercitationem saepe iure nam quos aspernatur debitis fuga eius animi sapiente, repellat pariatur, possimus earum expedita ab voluptate porro provident?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non doloremque aspernatur possimus quaerat excepturi itaque consectetur consequatur nemo culpa cum fugiat laboriosam eaque, unde sint iure dolore nostrum mollitia.lo</p>
 </body>
 </html>
