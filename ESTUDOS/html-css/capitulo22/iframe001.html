@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: lightblue;
+
+        }
+
+        main {
+            background-color: white;
+            height: 1000px;
+            width: 1000px;
+            margin: auto;
+        }
+
+        div {
+            padding: 10px;
+        }
+
+        div > p {
+            text-indent: 20px;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            height: 300px;
+            width: 950px;
+        }
+        footer {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apenas testando</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam obcaecati nulla explicabo repellendus exercitationem mollitia. Dicta, pariatur voluptatibus? Facilis nesciunt quasi at? Voluptas repellendus ex tenetur eligendi fugiat laboriosam vel!</p>
+
+    </header>
+    <main>
+        <div>
+            <h1>Aula 1 e 2 de iframe</h1>
+            <p> IFRAME significa iframe inline</p>
+            <p> &lt;iframe src="endereço do site" frameborder="0"&gt;texto&lt;/iframe&gt;</p>
+            <p>*Alguns sites não permitem iframes</p>
+            <p>Por isso é bom colocar dentro da tag iframe a tag 'a' com o mesmo link do site para caso o dispositivo não seja compativel com o iframe</p>
+            <p>Por padrão a altura e largura do iframe é 300x150, porém é possível configurar elas dentro da tag iframe ou no style. Podemos usar o pareametro scolling com os parametros 'auto', 'yes', 'no'.</p>
+        </div>
+        <div>
+
+            <iframe src="paginas-extras/tabelateste.html" frameborder="0">
+                <p>Infelizmente seu navegador não é compatível</p>
+            </iframe>
+
+        </div>
+    </main>
+    <footer>
+        <p>apenas testes</p>
+    </footer>
+    
+</body>
+</html>
