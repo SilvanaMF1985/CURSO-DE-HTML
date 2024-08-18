@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de notas</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/redes.css">
+</head>
+<body>
+    <header>
+        <h1>Fomulário de notas dos alunos</h1>
+        <p>Instituto Federal de Tecnologia</p>
+    </header>
+    <main>
+        <div>
+            <form action="cadastro.php" autocomplete="on" method="get">
+            <p>
+                <label for="inomecompleto">Nome completo:</label>
+                <input type="text" name="nomecompleto" id="inomecompleto" placeholder="Nome completo" required>
+            </p>
+
+            <p>
+                <label for="inota1">Nota 1: </label>
+                <input type="number" name="nota1" id="inota1" step="0.1" placeholder="adicione a primeira nota" required>
+            </p>
+
+            <p>
+                <label for="inota2">Nota 2: </label>
+                <input type="number" name="nota2" id="inota2" step="0.1" placeholder="Adicione a segunda nota" required>
+            </p>
+
+            <p>
+                <label for="imedia"> Média: </label>
+                <input type="number" name="media" id="imedia" step="0.1" placeholder="Adicione a média final" required>
+            </p>
+
+            <p>
+                <label for="iperiodo">Período letivo: </label>
+                <input type="month" name="periodo" id="iperiodo" required>
+            </p>
+
+            <p>
+                <label for="idataprova">Data da prova: </label>
+                <input type="date" name="dataprova" id="idataprova" required>
+            </p>
+
+            <p>
+                <label for="ihora">Hora da prova</label>
+                <input type="time" name="Hora" id="ihora">
+            </p>
+
+            <p>
+                <label for="ienviar"></label>
+                <input type="submit" value="Enviar">
+                <label for="ilimpar"></label>
+                <input type="reset" value="Limpar">
+            </p>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Formulário de notas dos alunos</p>
+        <p>Instituto Federal de Tecnologia</p>
+        <p>Criado por Silvana Furtado</p>
+        <section id="redes-sociais">
+            <a href="https://www.facebook.com/silvana.furtado.5" target="_blank"><img src="imagens/logo-facebook.jpg" alt="facebook"></a>
+            <a href="https://github.com/SilvanaMF1985" target="_blank"><img src="imagens/logo-github.jpg" alt="github"></a>
+            <a href="https://www.instagram.com/silm.furtado/" target="_blank"><img src="imagens/logo-instagram.jpg" alt="instagram"></a>
+            <a href="https://twitter.com/silvana115" target="_blank"><img src="imagens/logo-twitter.jpg" alt="twiter"></a>
+            <a href="https://www.youtube.com/@silvanafurtado4016" target="_blank"><img src="imagens/logo-youtube.jpg" alt="youtube"></a>
+            <a href="https://www.linkedin.com/in/silvana-furtado-88561959/" target="_blank"><img src="imagens/linkedin-logo.png" alt="linkedin"></a>
+        </section>
+    </footer>
+    
+</body>
+</html>
