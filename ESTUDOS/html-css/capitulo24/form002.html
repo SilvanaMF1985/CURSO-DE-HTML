@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 02</title>
+    <style>
+        body {
+            background-color: rgb(223, 223, 223);
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            color: blueviolet;
+        }
+
+        main{
+            display: block;
+            height: 300px;
+            width: 500px;
+            margin: auto;
+            background-color: blueviolet;
+        }
+
+        form{
+            margin: 20px;
+            padding: 50px;
+        }
+
+        p{
+            padding: 20px;
+        }
+
+        footer {
+            padding: 30px;
+            margin: 20px;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu segundo formulário</h1>
+        <h2>Capítulo 24 Aula 04</h2>
+        <h3>Criando caixas de texto e de senha</h3>
+    </header>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="iusu">Usuário:</label>
+                <input type="text" name="usuário" id="iusu" required minlength="8" maxlength="25" size="25" placeholder="nome de usuário">
+            </p>
+            <p>
+                <label for="isen">Senha:</label>
+                <input type="password" name="senha" id="isen" required minlength="8" maxlength="35" size="25" placeholder="digite sua senha">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+    </main>
+    <footer>
+        <p>Testes criados por Silvana Furtado</p>
+    </footer>
+</body>
+</html>
