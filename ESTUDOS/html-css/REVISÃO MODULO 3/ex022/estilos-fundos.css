@@ -1,0 +1,162 @@
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url(imagens/subhome-ai.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main#fundo {
+    background-repeat: no-repeat;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 1000px;
+    max-height: 3500px;
+}
+
+
+
+
+img#imagem-original {
+    margin: auto;
+}
+
+div.quadrado {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    width: 300px;
+    height: 300px;
+}
+
+div#q1 {
+    background-color: blueviolet;
+}
+
+div#q2 {
+    background-image: url('imagens/imagemtestesilvana.jpg');
+}
+
+div#q3 {
+    background-image: url('imagens/IMG-20231212-WA0017.jpg');
+}
+
+div#q4 {
+    background-image: linear-gradient(to right, pink, blue);
+}
+
+div#q5 {
+    background-image: url('https://img.freepik.com/vetores-premium/ilustracao-de-rosto-feliz-kawaii-de-pequenas-flores-fofas_405506-116.jpg?w=740');
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+
+div#q6 {
+    background-image: url('https://img.freepik.com/vetores-premium/ilustracao-de-rosto-feliz-kawaii-de-pequenas-flores-fofas_405506-116.jpg?w=740');
+    background-size: 100px 100px;
+    background-repeat: repeat-x;
+}
+
+div#q7 {
+    background-image: url('https://img.freepik.com/vetores-premium/ilustracao-de-rosto-feliz-kawaii-de-pequenas-flores-fofas_405506-116.jpg?w=740');
+    background-size: 100px 100px;
+    background-repeat: repeat-y;
+}
+
+div#q8 {
+    background-image: url('https://img.freepik.com/vetores-premium/ilustracao-de-rosto-feliz-kawaii-de-pequenas-flores-fofas_405506-116.jpg?w=740');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+
+div.bloco {
+    display: inline-block;
+    background-color: aliceblue;
+    height: 300px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+div#q9{
+    background-image: url('imagens/exemplo-div.png');
+    background-position: top right;
+}
+
+div#q10 {
+    background-image: url('imagens/exemplo-div.png');
+    background-position: top left;
+}
+
+div#q11 {
+    background-image: url('imagens/exemplo-div.png');
+    background-position: top center;
+}
+
+div#q12{
+    background-image: url('imagens/exemplo-div.png');
+    background-position: center left;
+}
+
+div#q13 {
+    background-image: url('imagens/exemplo-div.png');
+    background-position: center right;
+}
+
+div#q14 {
+    background-image: url('imagens/exemplo-div.png');
+    background-position: center center;
+}
+
+div#q15 {
+    background-image: url('imagens/exemplo-div.png');
+    background-position: bottom right;
+}
+
+div#q16 {
+    background-image: url('imagens/exemplo-div.png');
+    background-position: bottom left;
+}
+
+div#q17{ 
+    background-image: url('imagens/exemplo-div.png');
+    background-position: center bottom;
+}
+
+div#original {
+    background-image: url('imagens/exemplo-div.png');
+    height: 800px;
+    width: 800px;
+    border: 1px solid black;
+}
+
+#container {
+    background-image: url(imagens/exemplo-div.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color: lightgrey;
+    
+
+}
+
+#conteudo {
+    background-image: url(imagens/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}

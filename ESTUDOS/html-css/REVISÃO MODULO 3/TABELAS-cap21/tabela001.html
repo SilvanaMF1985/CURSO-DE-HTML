@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de tabelas</title>
+    <style>
+        body {
+            font-family: cursive;
+        }
+
+        main {
+            margin: auto;
+            max-width: 1000px;
+            max-height: 1000px;
+            border: 1px solid purple;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        caption {
+            background-color: white;
+            font-family: inherit;
+            font-size: 1.5em;
+            font-weight: bolder;
+            
+        }
+
+
+        td, th {
+            border: 1px solid black;
+            width: 150px;
+            padding: 5px;
+        }
+
+        th {
+            
+            background-color: #ffffff;
+            color: rgb(0, 10, 95);
+            
+        }
+
+        td {
+            background-color: #ffffff;
+            color: rgb(0, 63, 14);
+        }
+
+        #singular {
+            background-color: white;
+            color: purple;
+            text-align: center;
+            font-weight: bolder;
+            border-radius: 30px;
+        }
+
+        #plural {
+            background-color: white;
+            color: #800080;
+            font-weight: bolder;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        section {
+            height: 250px;
+            width: 300px;
+            background-color: #DB9C44;
+            padding: 10px;
+            border-radius: 60px 0px 60px 0px;
+            margin-top: 10px;
+        }
+
+        article > p {
+            text-align: justify;
+            padding: 10px;
+            color: #030188;
+        }
+
+        article > h3 {
+            text-align: center;
+            color: #006311;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>PRONOMES PESSOAIS</caption>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td id="singular">SINGULAR</td>
+                </tr>
+                <tr>
+                    <th>PORTUGUÊS</th>
+                    <th>INGLÊS</th>
+                    <th>ESPANHOL</th>
+                    <th>FRANCÊS</th>
+                    <th>ITALIANO</th>
+                    <th>CHINÊS</th>
+                </tr>
+                <tr>
+                    <td>EU</td>
+                    <td>I</td>
+                    <td>yo</td>
+                    <td>je</td>
+                    <td>IO</td>
+                    <td>我</td>
+                </tr>
+                <tr>
+                    <td>TU</td>
+                    <td>you</td>
+                    <td>tu</td>
+                    <td>tu</td>
+                    <td>voi</td>
+                    <td>你</td>
+                </tr>
+                <tr>
+                    <td>VOCÊ</td>
+                    <td>you</td>
+                    <td>usted</td>
+                    <td>toi</td>
+                    <td>voi</td>
+                    <td>你</td>
+                </tr>
+                <tr>
+                    <td>ELE</td>
+                    <td>he</td>
+                    <td>él</td>
+                    <td>il</td>
+                    <td>lui</td>
+                    <td>他</td>
+                </tr>
+                <tr>
+                    <td>ELA</td>
+                    <td>she</td>
+                    <td>ella</td>
+                    <td>elle</td>
+                    <td>lei</td>
+                    <td>她</td>
+                </tr>
+                <tr>
+                    <td>A GENTE</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td id="plural">PLURAL</td>
+                </tr>
+                <tr>
+                    <th>PORTUGUÊS</th>
+                    <th>INGLÊS</th>
+                    <th>ESPANHOL</th>
+                    <th>FRANCÊS</th>
+                    <th>ITALIANO</th>
+                    <th>CHINÊS</th>
+                </tr>
+                <tr>
+                    <td>NÓS</td>
+                    <td>we</td>
+                    <td>nosotros - as</td>
+                    <td>nous</td>
+                    <td>noi</td>
+                    <td>我们</td>
+                </tr>
+                <tr>
+                    <td>ELES</td>
+                    <td>they</td>
+                    <td>ellos</td>
+                    <td>ils</td>
+                    <td>Essi</td>
+                    <td>他们</td>
+                </tr>
+                <tr>
+                    <td>ELAS</td>
+                    <td>they</td>
+                    <td>ellas</td>
+                    <td>ils</td>
+                    <td>Essi</td>
+                    <td>她们</td>
+                </tr>
+                <tr>
+                    <td>VOCÊS</td>
+                    <td>you</td>
+                    <td>ustedes</td>
+                    <td>toi</td>
+                    <td>voi</td>
+                    <td>你们</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+        <section>
+            <article>
+                <h3>E “a gente”?</h3>
+                <p>No português brasileiro existe
+                    uma pessoa que aparece com
+                    muita frequência na fala cotidiana:
+                    o “a gente”, utilizado para
+                    expressar a mesma ideia que
+                    “nós”, porém sua conjugação
+                    acontece no singular.</p>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
