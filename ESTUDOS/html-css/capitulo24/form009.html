@@ -11,19 +11,15 @@
     </header>
 
     <main>
-        <form action="cadastro.php" method="get">
-
-            <p>
-                <label for="inum">Número: </label>
-                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
-                <output id="ival">5</output>
-            </p>
-
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
-        </form>
+        <form action="cadastro.php" method="get" autocomplete="on"></form>
+        <label for="inum">Número:</label>
+        <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+        <output id="ival">5</output>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </main>
     
 </body>
