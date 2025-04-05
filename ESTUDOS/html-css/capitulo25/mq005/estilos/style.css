@@ -28,6 +28,10 @@ span#burger {
     cursor: pointer;
 }
 
+span#burger:hover {
+    background-color: rgb(10, 11, 43);
+}
+
 menu{
     display: block;
 }
